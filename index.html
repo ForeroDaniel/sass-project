@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" sizes="any">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <base href="https://picsum.photos/" target="_blank" />
     <title>Sass Project</title>
 </head>
 <body>
-<h1 class="title">Hello world!</h1>
+<header>
+    <div class="content-left">
+        <h1>Lorem Picsum</h1>
+        <h2>The Lorem Ipsum for photos.</h2>
+    </div>
+    <img class="content-right" src="id/1011/1000/700" alt="Image">
+</header>
+
+<main>
+<section class="odd-section">
+    <div class="content-right text">
+        <h2>Easy to use, stylish placeholders</h2>
+        <p>
+            Just add your desired image size (width &amp; height) after our URL, and you'll get a random image.
+        </p>
+    </div>
+    <img class="content-left" src="id/1047/1000/700" alt="Image">
+</section>
+
+<section>
+    <div class="content-left text">
+        <h2>Specific Image</h2>
+        <p>
+            Get a specific image by adding <code>/id/{image}</code> to the start of the url.
+            <br>
+            You can find a list of all the images <a href="https://picsum.photos/images">here.</a>
+        </p>
+    </div>
+    <img class="content-right" src="id/200/1000/700" alt="Image">
+</section>
+
+<section class="odd-section">
+    <div class="content-right text">
+        <h2>Static Random Image</h2>
+        <p>
+            Get the same random image every time based on a seed, by adding <code>/seed/{seed}</code> to the start of the url.
+        </p>
+    </div>
+    <img class="content-left" src="seed/picsum/1000/700" alt="Image">
+</section>
+
+<section>
+    <div class="content-left text">
+        <h2>Grayscale</h2>
+        <p>
+            Get a grayscale image by appending <code>?grayscale</code> to the end of the url.
+        </p>
+    </div>
+    <img class="content-right" src="id/453/1000/700" alt="Image">
+</section>
+
+<section class="odd-section">
+    <div class="content-right text">
+        <h2>Blur</h2>
+        <p>
+            Get a blurred image by appending <code>?blur</code> to the end of the url.
+        </p>
+    </div>
+    <img class="content-left" src="id/1005/1000/700?blur" alt="Image">
+</section>
+
+<section>
+    <div class="content-left text">
+        <h2>Advanced Usage</h2>
+        <p>
+            You may combine any of the options above.
+            <br>
+            For example, get a specific image that is grayscale and blurred.
+        </p>
+    </div>
+    <img class="content-right" src="id/1073/1000/700?grayscale&blur=2" alt="Image">
+</section>
+</main>
+
+<div class="footer-basic">
+    <footer>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">Lorem Picsum © 2022</p>
+    </footer>
+</div>
 </body>
 </html>

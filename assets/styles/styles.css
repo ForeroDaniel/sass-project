@@ -1,4 +1,4 @@
-@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,8 +8,83 @@
   text-rendering: optimizeLegibility;
 }
 
+img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 1366px) {
+  .text {
+    padding: 5%;
+  }
+}
+
+header, section {
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  header, section {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+@media (min-width: 1366px) {
+  header, section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  header .content-left, section .content-left {
+    order: 1;
+  }
+  header .content-right, section .content-right {
+    order: 2;
+  }
+}
+
+.odd-section {
+  background-color: azure;
+}
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: #4b4c4d;
+  color: #ffffff;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
 html {
-  font-family: "Inter", sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 @supports (font-variation-settings: normal) {
@@ -17,5 +92,21 @@ html {
     font-family: "Inter var", sans-serif;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
+body {
+  display: grid;
+  grid-template-areas: "header" "section" "footer";
+}
+body header {
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+body header h2 {
+  margin-bottom: 100px;
+}
+body main section {
+  margin-bottom: 110px;
+}
+body main section p {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}/*# sourceMappingURL=styles.css.map */

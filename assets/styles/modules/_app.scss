@@ -1,3 +1,5 @@
+@import "../modules/breakpoints";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,4 +7,78 @@
   padding: 0;
   text-decoration: none;
   text-rendering: optimizeLegibility;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.text{
+  
+  @include viewport-large{
+    padding: 5%;
+  }
+}
+
+header, section {
+  padding: 8px;
+  @include viewport-medium {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  @include viewport-large {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .content-left{
+      order: 1;
+    }
+    .content-right{
+      order: 2;
+    }
+  }
+}
+
+
+
+.odd-section {
+  background-color:azure;
+
+}
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#4b4c4d;
+  color: #ffffff;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+} 
+  
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
 }
